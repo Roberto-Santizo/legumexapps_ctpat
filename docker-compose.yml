@@ -4,6 +4,7 @@ services:
   app:
     container_name: legumexapps-ctpat
     image: robertosantizo/legumexappsctpat:latest
+    pull_policy: always
     restart: always
     depends_on:
       - db
